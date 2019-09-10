@@ -1,0 +1,67 @@
+.ncDragList{
+    border:1px solid #ddd;
+	border-radius:5px;
+	font-size:12px;
+    box-sizing:border-box;
+}
+
+.ncDragListHead{
+    padding:3px 5px;
+	border-bottom:1px solid #ddd;
+    box-sizing:border-box;
+	user-select:none;
+	background-color:#eee;
+}
+
+.ncDragListBody{
+    position:relative;
+    box-sizing:border-box;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+.ncDragListItem{
+    padding:3px 5px;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+    box-sizing:border-box;
+	user-select:none;
+	cursor:pointer;
+}
+
+.ncDragListItem.hidden{
+    display:none;
+}
+
+.ncDragListItem.startDrag{
+    background-color:#dcec52;
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+    position:absolute;
+	width:100%;
+	z-index:3000;
+}
+
+.ncDragListItem.fixPos{
+    color:#ccc;
+}
+
+.ncDragListItemTitle{
+    overflow:hidden;
+	text-overflow:ellipsis;
+	display:inline-block;
+	vertical-align: middle;
+	width:90%;
+}
+
+.ncDragListItemBtn{
+    display:inline-block;
+	vertical-align: middle;
+	text-align:right;
+    width:9%;
+}
+
+.ncDragListItemBtn>.ncDragListItemBtnRemove{
+    cursor:default;
+    color:red;
+}
